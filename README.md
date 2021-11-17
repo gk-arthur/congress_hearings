@@ -4,3 +4,5 @@ This repository contains the codes I developed to analyze the content of oral te
 ## keyword_count.R
 Used to count keywords in oral testimony. All testimony was downloaded from Congress.gov or ProQuest and added to a .csv file.
 
+## committee_leaders.R
+Created dummy varible for party affiliation of congressional committee chairs.
