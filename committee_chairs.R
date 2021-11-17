@@ -1,4 +1,4 @@
-#committee leaders - republican
+#committee leaders 
 #dummy variable, 1=republican, 0=not republican
 
 library(tidyverse)
