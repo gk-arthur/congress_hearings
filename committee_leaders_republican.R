@@ -1,5 +1,4 @@
 #committee leaders - republican
-#variable: r_party
 #dummy variable, 1=republican, 0=not republican
 
 library(tidyverse)
@@ -33,7 +32,7 @@ names(data_df)<-c("meeting_id","r_party")
 head(data_df)
 
 #save
-write.csv(data_df,file="r_output_committee_republicanleader.csv",row.names = FALSE)
+write.csv(data_df,file="title.csv",row.names = FALSE)
 
 #plot - PER MEETING
 head(data_df)
@@ -55,4 +54,4 @@ meeting_plot + geom_col(width = 0.5,
     strip.background = element_rect(
       color="black",size=1.5, linetype="solid"))
 
-ggsave("repchair_meeting.jpg", width = 15, height = 10, units = "cm")
+ggsave("title.jpg", width = 15, height = 10, units = "cm")
