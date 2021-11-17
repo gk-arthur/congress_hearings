@@ -1,6 +1,6 @@
 # ordering states by number of deaths
 
-setwd("~/Policy - research/COVID focusing event/Congressional Record data/Committee meetings/Diseases/Final clean data/data")
+setwd()
 data <- read.csv("cases_deaths_states.csv", header = TRUE)
 
 library(tidyverse); library(dplyr)
