@@ -1,11 +1,10 @@
 # committee members - state affiliations
 # top 5 states, COVID deaths
-# variable ro_state
 
 library(tidyverse)
 library(dplyr)
 
-setwd("~/Policy - research/COVID focusing event/Congressional Record data/Final coding and data/Final clean data/data - per meeting")
+setwd()
 
 data <- read.csv("committeemembers_r.csv",header=TRUE)
 
@@ -283,7 +282,7 @@ final$lo_state <- round(final$lo_state,digits=2)
 final
 
 #save
-write.csv(final,file="r_output_committee_top5death.csv",row.names = FALSE)
+write.csv(final,file="title.csv",row.names = FALSE)
 
 #plot - PER MEETING
 final_df <- data.frame(final)
@@ -306,4 +305,4 @@ meeting_plot + geom_col(width = 0.5,
     strip.background = element_rect(
       color="black",size=1.5, linetype="solid"))
 
-ggsave("top5death_meeting.jpg", width = 15, height = 10, units = "cm")
+ggsave("title.jpg", width = 15, height = 10, units = "cm")
