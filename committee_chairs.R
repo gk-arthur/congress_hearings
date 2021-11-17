@@ -4,7 +4,7 @@
 library(tidyverse)
 library(dplyr)
 
-setwd("~/Policy - research/COVID focusing event/Congressional Record data/Final coding and data/Final clean data/data - per meeting")
+setwd()
 
 data <- read.csv("committeemembers_r.csv",header=TRUE)
 
