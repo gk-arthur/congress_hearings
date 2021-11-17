@@ -1,10 +1,9 @@
 # PROPORTION OF NON PROFESSIONAL WITNESSES PER MEETING
-# variable = u_nonprof
 
 library(dplyr)
 library(tidyverse)
 
-setwd("~/Policy - research/COVID focusing event/Congressional Record data/Final coding and data/Final clean data/data - per meeting")
+setwd()
 
 data <- read.csv("witness type_clean.csv",header=TRUE)
 
@@ -85,7 +84,7 @@ wit_type$u_nonprof <- round(wit_type$u_nonprof,digits=2)
 wit_type
 
 #save
-write.csv(wit_type,file="r_output_nonprof_witnesstype.csv",row.names = FALSE)
+write.csv(wit_type,file="title.csv",row.names = FALSE)
 
 #plot - PER MEETING
 nonprof_df <- data.frame(wit_type)
@@ -108,7 +107,7 @@ meeting_plot + geom_col(width = 0.5,
     strip.background = element_rect(
       color="black",size=1.5, linetype="solid"))
 
-ggsave("nonprof_meeting.jpg", width = 15, height = 10, units = "cm")
+ggsave("title.jpg", width = 15, height = 10, units = "cm")
 
 #plot - PER MONTH
 #take month data
@@ -167,4 +166,4 @@ data_long_df %>% as_tibble(data_long_df) %>%
     strip.background = element_rect(
       color="black",size=1.5, linetype="solid"))
 
-ggsave("nonprof_month.jpg", width = 17, height = 10, units = "cm")
+ggsave("title.jpg", width = 17, height = 10, units = "cm")
