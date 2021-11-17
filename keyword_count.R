@@ -5,7 +5,7 @@ library(ggplot2)
 
 #https://www.tidytextmining.com/tidytext.html
 
-setwd("~/Personal stuff/Policy/Policy - research/COVID focusing event/Congressional Record data/Committee meetings/Diseases/Final clean data")
+setwd()
 #read witness testimony (saved as csv, text copied straight in, not in single cell)
 testimony <- read.csv(file="testimony_2018-2020.csv")
 testimony
