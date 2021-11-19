@@ -24,5 +24,3 @@ After developing different categories for witnesses, this code quantifies the pr
 
 ## statedeaths_top5.R
 Super quick code to provide top 5 states for COVID deaths on a particular date.
-
-[Figure 1](https://github.com/gk-arthur/congress_hearings/blob/main/results/react_month.jpg)
