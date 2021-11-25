@@ -1,5 +1,7 @@
 # Congress hearings
-This repository contains the codes I developed to analyze the content of oral testimony delivered by congressional committee witnesses.
+This repository contains the codes I developed to analyze the content of oral testimony delivered by congressional committee witnesses. 
+
+A preprint of my work is available here: https://osf.io/preprints/socarxiv/vak93/ - this should be interpreted with caution because I'm currently working on feedback received from the Policy Studies Journal, which highlighted a number of issues that need to be resolved. 
 
 This includes code for quantifying:
 
